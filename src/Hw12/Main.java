@@ -1,21 +1,23 @@
 package Hw12;
 
 public class Main {
-    public static void main(java.lang.String[] args) {
-        Book onegin = new Book("Александр Пушкин","Евгений Онегин", 1832);
-        Book godunov = new Book("Александр Пушкин", "Борис Годунов", 1825);
-        Book dogsHeart = new Book ("Михаил Булгаков", "Собачье сердце", 1925);
-        System.out.println(onegin.getName());
-        System.out.println(onegin.getTitle());
-        System.out.println(onegin.getYear());
-        onegin.setYear(1831);
-        System.out.println(onegin.getYear());
-        System.out.println(godunov.getName());
-        System.out.println(godunov.getTitle());
-        System.out.println(godunov.getYear());
-        System.out.println(dogsHeart.getName());
-        System.out.println(dogsHeart.getTitle());
-        System.out.println(dogsHeart.getYear());
+    public static void main(String[] args) {
+        Author author1 = new Author("Александр Пушкин");
+        Author author2 = new Author("Михаил Булгаков");
+        Book book1 = new Book(author1, "Борис Годунов", 1825);
+        Book book2 = new Book(author1, "Евгений Онегин", 1832);
+        Book book3 = new Book(author2, "Собачье сердце", 1925);
+        System.out.println(author1.getAuthor());
+        System.out.println(book1.getTitle());
+        System.out.println(book1.getYear());
+        System.out.println(author1.getAuthor());
+        System.out.println(book2.getTitle());
+        System.out.println(book2.getYear());
+        book2.setYear(1831);
+        System.out.println(book2.getYear());
+        System.out.println(author2.getAuthor());
+        System.out.println(book3.getTitle());
+        System.out.println(book3.getYear());
 
     }
 }

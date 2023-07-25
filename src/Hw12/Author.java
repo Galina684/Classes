@@ -1,12 +1,16 @@
 package Hw12;
 
 public class Author {
-    private String name;
-    public Author(String name){
-        this.name=name;
+     private String author;
+
+
+    public Author(String author){
+        this.author =author;
     }
 
-    public String getName() {
-        return name;
+    public String getAuthor() {
+        return this.author;
+
     }
+
 }
