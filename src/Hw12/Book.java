@@ -1,18 +1,22 @@
 package Hw12;
 
-public class Book extends Author {
-    private  String name;
-   private String title;
-   private int year;
-   public Book(String name, String title, int year){
-       super(name);
-       this.title = title;
-       this.year = year;
-   }
+public class Book {
 
-    @Override
+
+    private String Author;
+    private String title;
+    private int year;
+
+
+    public Book(String Author, String title, int year) {
+        this.Author = Author;
+        this.title = title;
+        this.year = year;
+    }
+
+
     public String getName() {
-        return name;
+        return Author;
     }
 
     public String getTitle() {
