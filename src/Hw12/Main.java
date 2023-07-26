@@ -7,17 +7,11 @@ public class Main {
         Book book1 = new Book(author1, "Борис Годунов", 1825);
         Book book2 = new Book(author1, "Евгений Онегин", 1832);
         Book book3 = new Book(author2, "Собачье сердце", 1925);
-        System.out.println(author1.getAuthor());
-        System.out.println(book1.getTitle());
-        System.out.println(book1.getYear());
-        System.out.println(author1.getAuthor());
-        System.out.println(book2.getTitle());
-        System.out.println(book2.getYear());
-        book2.setYear(1831);
-        System.out.println(book2.getYear());
-        System.out.println(author2.getAuthor());
-        System.out.println(book3.getTitle());
-        System.out.println(book3.getYear());
+        System.out.println(book1);
+        System.out.println(book2);
+        System.out.println(book3);
+        System.out.println(author1.equals(author2));
+        System.out.println(book1.equals(book2));
 
     }
 }
